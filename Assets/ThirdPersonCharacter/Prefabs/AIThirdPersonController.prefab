@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 19597056}
   - component: {fileID: 1469677486216126204}
   - component: {fileID: 11450346}
+  - component: {fileID: 2561644376689929900}
   m_Layer: 0
   m_Name: AIThirdPersonController
   m_TagString: Untagged
@@ -52,153 +53,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
-  m_WarningMessage: '
-
-    Transform ''EthanLeftToe1'' has been deleted
-
-    Transform
-    ''EthanLeftFoot'' has been deleted
-
-    Transform ''EthanLeftLeg'' has been deleted
-
-    Transform
-    ''EthanLeftUpLeg'' has been deleted
-
-    Transform ''EthanRightToe1'' has been
-    deleted
-
-    Transform ''EthanRightFoot'' has been deleted
-
-    Transform ''EthanRightLeg''
-    has been deleted
-
-    Transform ''EthanRightUpLeg'' has been deleted
-
-    Transform
-    ''EthanJaw'' has been deleted
-
-    Transform ''EthanLeftEye'' has been deleted
-
-    Transform
-    ''EthanRightEye'' has been deleted
-
-    Transform ''EthanHead'' has been deleted
-
-    Transform
-    ''EthanLeftHandIndex3'' has been deleted
-
-    Transform ''EthanLeftHandIndex2''
-    has been deleted
-
-    Transform ''EthanLeftHandIndex1'' has been deleted
-
-    Transform
-    ''EthanLeftHandMiddle3'' has been deleted
-
-    Transform ''EthanLeftHandMiddle2''
-    has been deleted
-
-    Transform ''EthanLeftHandMiddle1'' has been deleted
-
-    Transform
-    ''EthanLeftHandPinky3'' has been deleted
-
-    Transform ''EthanLeftHandPinky2''
-    has been deleted
-
-    Transform ''EthanLeftHandPinky1'' has been deleted
-
-    Transform
-    ''EthanLeftHandRing3'' has been deleted
-
-    Transform ''EthanLeftHandRing2''
-    has been deleted
-
-    Transform ''EthanLeftHandRing1'' has been deleted
-
-    Transform
-    ''EthanLeftHandThumb3'' has been deleted
-
-    Transform ''EthanLeftHandThumb2''
-    has been deleted
-
-    Transform ''EthanLeftHandThumb1'' has been deleted
-
-    Transform
-    ''EthanLeftHand'' has been deleted
-
-    Transform ''EthanLeftForeArm'' has been
-    deleted
-
-    Transform ''EthanLeftArm'' has been deleted
-
-    Transform ''EthanLeftShoulder''
-    has been deleted
-
-    Transform ''EthanRightHandIndex3'' has been deleted
-
-    Transform
-    ''EthanRightHandIndex2'' has been deleted
-
-    Transform ''EthanRightHandIndex1''
-    has been deleted
-
-    Transform ''EthanRightHandMiddle3'' has been deleted
-
-    Transform
-    ''EthanRightHandMiddle2'' has been deleted
-
-    Transform ''EthanRightHandMiddle1''
-    has been deleted
-
-    Transform ''EthanRightHandPinky3'' has been deleted
-
-    Transform
-    ''EthanRightHandPinky2'' has been deleted
-
-    Transform ''EthanRightHandPinky1''
-    has been deleted
-
-    Transform ''EthanRightHandRing3'' has been deleted
-
-    Transform
-    ''EthanRightHandRing2'' has been deleted
-
-    Transform ''EthanRightHandRing1''
-    has been deleted
-
-    Transform ''EthanRightHandThumb3'' has been deleted
-
-    Transform
-    ''EthanRightHandThumb2'' has been deleted
-
-    Transform ''EthanRightHandThumb1''
-    has been deleted
-
-    Transform ''EthanRightHand'' has been deleted
-
-    Transform
-    ''EthanRightForeArm'' has been deleted
-
-    Transform ''EthanRightArm'' has been
-    deleted
-
-    Transform ''EthanRightShoulder'' has been deleted
-
-    Transform
-    ''EthanNeck'' has been deleted
-
-    Transform ''EthanSpine2'' has been deleted
-
-    Transform
-    ''EthanSpine1'' has been deleted
-
-    Transform ''EthanSpine'' has been deleted
-
-    Transform
-    ''EthanHips'' has been deleted
-
-    Transform ''EthanSkeleton'' has been deleted'
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -288,6 +143,18 @@ MonoBehaviour:
   m_MoveSpeedMultiplier: 1
   m_AnimSpeedMultiplier: 1
   m_GroundCheckDistance: 0.2
+--- !u!114 &2561644376689929900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40acf221aaad24a4c9497850fcc28b6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1275248949136852632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -295,16 +162,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 436670}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: dd6550ece43af764e8e9a802baa977e6,
-        type: 3}
-      propertyPath: m_Name
-      value: demon
-      objectReference: {fileID: 0}
-    - target: {fileID: -5716681864270162303, guid: dd6550ece43af764e8e9a802baa977e6,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: dd6550ece43af764e8e9a802baa977e6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -374,6 +231,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: dd6550ece43af764e8e9a802baa977e6,
+        type: 3}
+      propertyPath: m_Name
+      value: demon
+      objectReference: {fileID: 0}
+    - target: {fileID: -5716681864270162303, guid: dd6550ece43af764e8e9a802baa977e6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6550ece43af764e8e9a802baa977e6, type: 3}
