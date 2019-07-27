@@ -36,7 +36,7 @@ public class Weapon : MonoBehaviour {
 
             Instantiate( impactFX, hit.point , Quaternion.identity );
 
-            EnemyHealth target = hit.transform.GetComponent<EnemyHealth>( );
+            EnemyAI target = hit.transform.GetComponent<EnemyAI>( );
             if( !target ) {
                 return;
             }
