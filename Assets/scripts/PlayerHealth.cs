@@ -8,7 +8,7 @@ public class PlayerHealth : MonoBehaviour {
         playerhealth -= damage;
         print( "Player was Hit!!!!" );
         if( playerhealth <= 0 ) {
-            print( "Player is dead!!!" );
+            FindObjectOfType<DeathHandler>( ).HandleDeath( );
         }
     }
 
