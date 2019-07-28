@@ -2075,13 +2075,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1430602355}
-  m_LocalRotation: {x: -0.0103995, y: 0.005576746, z: -0.016931435, w: 0.99978703}
+  m_LocalRotation: {x: -0.016906673, y: 0.005353191, z: -0.02380443, w: 0.99955934}
   m_LocalPosition: {x: -3.8200016, y: 2.1399994, z: -9.390007}
   m_LocalScale: {x: 10.027614, y: 0.2979928, z: 0.6670168}
   m_Children: []
   m_Father: {fileID: 1106220966}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: -1.1810001, y: 0.65900004, z: -1.9470001}
+  m_LocalEulerAnglesHint: {x: -1.922, y: 0.66, z: -2.7400002}
 --- !u!1 &1439872912
 GameObject:
   m_ObjectHideFlags: 0
@@ -3187,6 +3187,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4709750211255412418, guid: 826888576e6969e4b968db5a94dd6fd6,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4709750211255515874, guid: 826888576e6969e4b968db5a94dd6fd6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3251,11 +3256,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Gun_with_flashlight
-      objectReference: {fileID: 0}
-    - target: {fileID: 4709750211255412418, guid: 826888576e6969e4b968db5a94dd6fd6,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4709750211257286434, guid: 826888576e6969e4b968db5a94dd6fd6,
         type: 3}
