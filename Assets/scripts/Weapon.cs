@@ -1,5 +1,5 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class Weapon : MonoBehaviour {
     [Header("General")]
@@ -10,7 +10,7 @@ public class Weapon : MonoBehaviour {
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] GameObject impactFX;
     [SerializeField] Ammo ammoSlot;
-    
+    [SerializeField] Text ammoText;
 
     // Update is called once per frame
     void Update( ) {
@@ -19,14 +19,13 @@ public class Weapon : MonoBehaviour {
                 Shoot( );
                 ammoSlot.decreaseAmmoCount( );
             }
-            
         }
+        ammoText.text = ("Ammo: " + ammoSlot.GetAmmoCount());
     }
 
     private void Shoot( ) {
         //TODO add fire effects
         MuzzleFlash( );
-
         ProcessRaycasting( );
     }
 

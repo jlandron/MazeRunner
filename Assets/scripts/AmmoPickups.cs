@@ -1,12 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class AmmoPickups : MonoBehaviour
-{
+public class AmmoPickups : MonoBehaviour {
+    [SerializeField] int ammoAmount = 6;
+
     private void OnTriggerEnter( Collider other ) {
         if( other.gameObject.tag == "Player" ) {
-            print( "Player picked me up!" );
+            FindObjectOfType<Ammo>( ).increaseAmmoCount( ammoAmount );
             Destroy( gameObject );
         }
     }
