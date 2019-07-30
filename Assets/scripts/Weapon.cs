@@ -24,7 +24,7 @@ public class Weapon : MonoBehaviour {
     }
 
     private void Shoot( ) {
-        //TODO add fire effects
+        //TODO add sound effects
         MuzzleFlash( );
         ProcessRaycasting( );
     }
