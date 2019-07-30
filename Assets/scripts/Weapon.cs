@@ -9,12 +9,17 @@ public class Weapon : MonoBehaviour {
     [SerializeField] Camera PlayerCamera;
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] GameObject impactFX;
+    [SerializeField] Ammo ammoSlot;
     
 
     // Update is called once per frame
     void Update( ) {
         if( Input.GetButtonDown( "Fire1" ) ) {
-            Shoot( );
+            if( ammoSlot.GetAmmoCount( ) > 0 ) {
+                Shoot( );
+                ammoSlot.decreaseAmmoCount( );
+            }
+            
         }
     }
 
