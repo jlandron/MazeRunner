@@ -107,7 +107,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75f55fd9ea3b3c4499fbf5a25b675940, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioClip: {fileID: 8300000, guid: 4c45fae194f06e4429f6cb77c799daca, type: 3}
+  grindSFX: {fileID: 8300000, guid: 4c45fae194f06e4429f6cb77c799daca, type: 3}
+  bangSFX: {fileID: 8300000, guid: a9ff718185133ba409af02b9daa9a737, type: 3}
   verticalMoveAmount: 10
   moveSpeed: 2
 --- !u!82 &2080144648198497620

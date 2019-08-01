@@ -7,7 +7,8 @@ public class BarrierMover : MonoBehaviour {
     private bool isMoveingDown = false;
     private float originalYpos;
     private AudioSource audioSource;
-    [SerializeField] AudioClip audioClip;
+    [SerializeField] AudioClip grindSFX;
+    [SerializeField] AudioClip bangSFX;
     [SerializeField] float verticalMoveAmount = 10f;
     [Range( 1, 20 )] [SerializeField] float moveSpeed = 2f;
 
@@ -23,6 +24,8 @@ public class BarrierMover : MonoBehaviour {
     private void MoveBlock( ) {
         if( isMoveingUp ) {
             if( gameObject.transform.position.y >= originalYpos  ) {
+                audioSource.Stop( );
+                audioSource.PlayOneShot( bangSFX );
                 isMoveingUp = false;
                 isBlocking = false;
             }
@@ -30,6 +33,8 @@ public class BarrierMover : MonoBehaviour {
         }
         else if( isMoveingDown ) {
             if( gameObject.transform.position.y <= originalYpos - verticalMoveAmount ) {
+                audioSource.Stop( );
+                audioSource.PlayOneShot( bangSFX );
                 isMoveingDown = false;
                 isBlocking = true;
             }
@@ -55,7 +60,7 @@ public class BarrierMover : MonoBehaviour {
                 else {
                     isMoveingDown = true;
                 }
-                audioSource.PlayOneShot( audioClip );
+                audioSource.PlayOneShot( grindSFX );
             }
             yield return new WaitForSeconds( UnityEngine.Random.Range( 10, 40 ) );
         }
